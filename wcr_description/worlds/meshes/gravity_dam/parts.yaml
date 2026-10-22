@@ -1,0 +1,12 @@
+# OBJ object -> material (tools/build_webots.py)
+part_0: gate
+part_1: gate
+part_2: gate
+part_3: gate
+part_4: gate
+part_5: dam-road
+part_6: material
+part_7: material
+part_8: powerhouse-walls
+part_9: powerhouse-trim
+part_10: penstocks

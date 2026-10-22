@@ -1,0 +1,36 @@
+newmtl gate
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd gate.jpg
+
+newmtl dam-road
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd dam-road.jpg
+
+newmtl material
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd material.jpg
+
+newmtl powerhouse-walls
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd powerhouse-walls.jpg
+
+newmtl powerhouse-trim
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd powerhouse-trim.jpg
+
+newmtl penstocks
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.05 0.05 0.05
+map_Kd penstocks.jpg
+

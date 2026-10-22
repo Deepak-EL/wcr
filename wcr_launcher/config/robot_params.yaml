@@ -1,0 +1,144 @@
+# Robot Physical Parameters Configuration
+# Masses are estimates (tools/design_math.py); replace with scale readings.
+
+# Configuration
+side_propellers: false          # true = original design with 4 side props (+ wcr_controller_side_props.yaml)
+chassis_mesh: chassis_body.obj  # chassis_body_arms.obj keeps the empty prop arm tubes
+
+# Geometry
+length: 0.225
+width: 0.225
+chassis_mass: 1.45              # frame, skirt, EDF motor/duct, ESC, electronics, wiring
+chassis_inertia: 0.003          # unused (kept for older xacros)
+chassis_com_x: -0.0093          # from CAD solids, chassis_link frame
+chassis_com_y: 0.0
+chassis_com_z: 0.0729
+chassis_ixx: 0.00817
+chassis_iyy: 0.0141
+chassis_izz: 0.01988
+
+# Sensor Mount Poses (m, rad)
+imu_x: 0.06551
+imu_y: 0.0
+imu_z: 0.098
+imu_roll: 0.0
+imu_pitch: 0.0
+imu_yaw: 0.0
+
+camera_x: 0.14885
+camera_y: 0.00922
+camera_z: 0.06659
+camera_roll: 0.0
+camera_pitch: 0.0
+camera_yaw: 0.0
+
+optical_flow_x: 0.06
+optical_flow_y: 0.0
+optical_flow_z: 0.095
+optical_flow_roll: 0.0
+optical_flow_pitch: 1.57079632679
+optical_flow_yaw: 0.0
+
+barometer_x: 0.06
+barometer_y: 0.0
+barometer_z: 0.1
+barometer_roll: 0.0
+barometer_pitch: 0.0
+barometer_yaw: 0.0
+
+distance_sensor_x: 0.16
+distance_sensor_y: 0.0
+distance_sensor_z: 0.05
+distance_sensor_roll: 0.0
+distance_sensor_pitch: 1.57079632679
+distance_sensor_yaw: 0.0
+
+# Sensor Rates (Hz)
+imu_rate_hz: 100.0
+camera_rate_hz: 30.0
+optical_flow_rate_hz: 50.0
+barometer_rate_hz: 25.0
+distance_rate_hz: 20.0
+
+# Sensor Noise (stddev)
+imu_gyro_stddev: 0.001
+imu_accel_stddev: 0.01
+camera_noise_stddev: 0.0005
+optical_flow_noise_stddev: 0.0005
+barometer_noise_stddev: 10.0
+distance_noise_stddev: 0.0005
+
+# Camera / Optical Flow Optics
+camera_width: 800
+camera_height: 800
+camera_hfov: 1.3962634
+optical_flow_width: 320
+optical_flow_height: 240
+optical_flow_hfov: 1.3962634
+
+# Distance Sensor Limits
+distance_min_m: 0.05
+distance_max_m: 5.0
+distance_resolution_m: 0.01
+
+# Barometer
+barometer_reference_altitude: 0.0
+
+# Thruster / Environment
+air_density: 1.225
+thruster_coefficient: 0.1
+propeller_diameter_main: 0.2286
+propeller_diameter_edf: 0.11
+
+# Steering System
+steering_height: 0.05029
+steering_mass: 0.08
+steering_effort: 1.9
+steering_velocity: 5.23598775 # default
+steering_i_xx: 0.00002
+steering_i_xy: 0.00000
+steering_i: 0.00006
+
+# Wheel System
+wheel_height: -0.035250
+wheel_mass: 0.035
+wheel_radius: 0.0254
+wheel_width: 0.020
+wheel_i_axial: 0.0001           # includes reflected gearbox inertia
+wheel_i_radial: 0.00006         # >= axial/2 (triangle inequality)
+wheel_effort: 1.9
+wheel_velocity: 5.23598775 # default
+wheel_i_xx: 0.0002
+wheel_i_xy: 0.0001
+
+# Propeller System
+prop_x: 0.03561
+prop_y: 0.18981
+prop_height: 0.09991
+prop_mass: 0.015
+prop_effort: 1.0
+prop_velocity: 2800.0
+prop_limit_upper: -1e16
+prop_limit_lower: 1e16
+prop_i_xy: 0.0001
+prop_i_z: 0.0002
+max_thrust_cmd_propeller: 2800
+thrust_coefficient_propeller: 0.89
+
+
+# EDF System
+# thrust/edf is the total adhesion force [N] (fan thrust + skirt suction), see design_math.py.
+# 45 N assumes ~10 N thrust + ~1.1 kPa skirt suction; it is a placeholder until measured.
+edf_mass: 0.02                  # rotor only
+edf_i: 0.00002
+edf_effort: 100.0
+edf_velocity: 4500.0
+edf_limit_upper: -1e16
+edf_limit_lower: 1e16
+edf_i_xy: 0.001
+edf_i_z: 0.002
+max_thrust_cmd_edf: 45.0
+thrust_coefficient_edf: 12.0    # only sets the cosmetic rotor speed (~280 rad/s at 30 N)
+
+# Testing/Default Values
+default_inertia: 0.001

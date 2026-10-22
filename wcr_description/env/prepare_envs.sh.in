@@ -1,0 +1,2 @@
+export IGN_GAZEBO_RESOURCE_PATH="$AMENT_CURRENT_PREFIX/share/wcr_description/worlds/meshes:${IGN_GAZEBO_RESOURCE_PATH}"
+export GZ_SIM_RESOURCE_PATH="$AMENT_CURRENT_PREFIX/share/wcr_description/worlds/meshes:${GZ_SIM_RESOURCE_PATH}"

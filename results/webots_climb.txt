@@ -1,0 +1,7 @@
+WEBOTS climb test: PASS
+  settle_slide_m  0.0052
+  climb_speed     0.1199
+  climb_height_m  2.9404
+  surface_deg     79.0039
+  hold_drift_m    0.0001
+  commanded speed 0.1200   sim time 31.0 s

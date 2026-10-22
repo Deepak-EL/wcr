@@ -1,0 +1,8 @@
+build/
+install/
+log/
+# temporary worlds written by the test scripts and the ROS launch
+webots/worlds/_*.wbt
+__pycache__/
+# private: exported Claude Code conversation
+chat_history.html

@@ -1,0 +1,9 @@
+# Nav2 wall map of winter_dam (seed 7), tools/wall_map.py: map frame on the face,
+# x up the face, y across; free = inspection area + 0.3 m, mapped obstacles occupied
+image: winter_dam.pgm
+mode: trinary
+resolution: 0.05
+origin: [-0.300, -6.900, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25

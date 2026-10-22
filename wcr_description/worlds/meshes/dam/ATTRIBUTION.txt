@@ -1,0 +1,4 @@
+"Dam during winter" by orphanrtg
+https://sketchfab.com/3d-models/dam-during-winter-15f640fda8f14a4997850ab62d87a99b
+License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Changes: rescaled, re-oriented, face/floor flattened onto fitted planes, made two-sided.

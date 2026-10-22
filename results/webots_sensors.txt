@@ -1,0 +1,9 @@
+WEBOTS sensor test: PASS
+  lidar         360 beams, 231 hits, nearest 0.49 m, farthest 11.88 m
+  wall camera   640x480, fov 1.15 rad
+  front camera  640x480, fov 1.40 rad
+  imu rpy         -0.0,  -53.5,   90.0 deg   surface 53.5 deg
+  gyro          -0.000, +0.000, +0.000 rad/s
+  accelerometer +7.89, -0.00, +5.83 m/s2
+  encoders      FL +0.999 m, BL +0.999 m, BR +0.999 m, FR +0.999 m  (1 m climbed)
+  EDF rotor     55 turns in 12.3 s

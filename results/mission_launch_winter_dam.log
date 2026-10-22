@@ -1,0 +1,409 @@
+[INFO] [launch]: All log files can be found below /home/deepakel176/.ros/log/2026-10-21-15-27-46-859240-NITROV16S-616
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [webots-1]: process started with pid [622]
+[INFO] [webots_controller_wcr-2]: process started with pid [624]
+[INFO] [robot_state_publisher-3]: process started with pid [626]
+[INFO] [inspection_detector-4]: process started with pid [628]
+[INFO] [wall_frames-5]: process started with pid [630]
+[INFO] [ekf_node-6]: process started with pid [632]
+[INFO] [controller_server-7]: process started with pid [634]
+[INFO] [smoother_server-8]: process started with pid [636]
+[INFO] [planner_server-9]: process started with pid [638]
+[INFO] [behavior_server-10]: process started with pid [640]
+[INFO] [bt_navigator-11]: process started with pid [642]
+[INFO] [waypoint_follower-12]: process started with pid [644]
+[INFO] [velocity_smoother-13]: process started with pid [646]
+[INFO] [lifecycle_manager-14]: process started with pid [648]
+[INFO] [coverage_mission-15]: process started with pid [650]
+[controller_server-7] [INFO] [1792576667.509873871] [controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1792576667.523820865] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-14] [INFO] [1792576667.525031414] [lifecycle_manager_navigation]: Creating
+[waypoint_follower-12] [INFO] [1792576667.529080184] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1792576667.535662708] [waypoint_follower]: Creating
+[planner_server-9] [INFO] [1792576667.543144000] [planner_server]: Creating
+[lifecycle_manager-14] [INFO] [1792576667.546029256] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_navigator-11] [INFO] [1792576667.551312705] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1792576667.551545254] [bt_navigator]: Creating
+[controller_server-7] [INFO] [1792576667.551854943] [controller_server]: Creating controller server
+[smoother_server-8] [INFO] [1792576667.556952605] [smoother_server]: 
+[smoother_server-8] 	smoother_server lifecycle node launched. 
+[smoother_server-8] 	Waiting on external lifecycle transitions to activate
+[smoother_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-8] [INFO] [1792576667.558563376] [smoother_server]: Creating smoother server
+[behavior_server-10] [INFO] [1792576667.563749768] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1792576667.577017442] [local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-13] [INFO] [1792576667.577214146] [velocity_smoother]: 
+[velocity_smoother-13] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-13] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1792576667.580308868] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1792576667.583120721] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1792576667.583175665] [local_costmap.local_costmap]: Creating Costmap
+[robot_state_publisher-3] [INFO] [1792576667.585093012] [robot_state_publisher]: got segment BL_steering_link
+[robot_state_publisher-3] [INFO] [1792576667.585211018] [robot_state_publisher]: got segment BL_wheel_link
+[robot_state_publisher-3] [INFO] [1792576667.585225167] [robot_state_publisher]: got segment BR_steering_link
+[robot_state_publisher-3] [INFO] [1792576667.585231473] [robot_state_publisher]: got segment BR_wheel_link
+[robot_state_publisher-3] [INFO] [1792576667.585236943] [robot_state_publisher]: got segment FL_steering_link
+[robot_state_publisher-3] [INFO] [1792576667.585242239] [robot_state_publisher]: got segment FL_wheel_link
+[robot_state_publisher-3] [INFO] [1792576667.585247474] [robot_state_publisher]: got segment FR_steering_link
+[robot_state_publisher-3] [INFO] [1792576667.585252650] [robot_state_publisher]: got segment FR_wheel_link
+[robot_state_publisher-3] [INFO] [1792576667.585258249] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1792576667.585263629] [robot_state_publisher]: got segment chassis_link
+[robot_state_publisher-3] [INFO] [1792576667.585268727] [robot_state_publisher]: got segment edf_link
+[robot_state_publisher-3] [INFO] [1792576667.585273973] [robot_state_publisher]: got segment front_camera_link
+[robot_state_publisher-3] [INFO] [1792576667.585278967] [robot_state_publisher]: got segment front_camera_optical
+[robot_state_publisher-3] [INFO] [1792576667.585284871] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1792576667.585353780] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-3] [INFO] [1792576667.585363676] [robot_state_publisher]: got segment sensor_mounts
+[robot_state_publisher-3] [INFO] [1792576667.585370154] [robot_state_publisher]: got segment wall_camera_link
+[robot_state_publisher-3] [INFO] [1792576667.585510887] [robot_state_publisher]: got segment wall_camera_optical
+[lifecycle_manager-14] [INFO] [1792576667.666671760] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1792576667.666825041] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1792576667.667267389] [controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1792576667.667765166] [controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1792576667.667987367] [controller_server]: Controller frequency set to 10.0000Hz
+[controller_server-7] [INFO] [1792576667.668049023] [local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1792576667.672847405] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-7] [INFO] [1792576667.685827753] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1792576667.688189475] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-7] [INFO] [1792576667.688240146] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1792576667.689398480] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1792576667.700390941] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1792576667.702956282] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1792576667.704010390] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1792576667.710778516] [controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+[controller_server-7] [INFO] [1792576667.713573968] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[controller_server-7] [INFO] [1792576667.719413156] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[controller_server-7] [INFO] [1792576667.719688250] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[controller_server-7] [INFO] [1792576667.722795734] [controller_server]: ObstaclesCritic instantiated with 1 power and 20.000000 / 1.500000 weights. Critic will collision check based on footprint cost.
+[controller_server-7] [INFO] [1792576667.722858110] [controller_server]: Critic loaded : mppi::critics::ObstaclesCritic
+[controller_server-7] [INFO] [1792576667.723115597] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[controller_server-7] [INFO] [1792576667.723141655] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[controller_server-7] [INFO] [1792576667.723354011] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, and 0.500000 angular threshold.
+[controller_server-7] [INFO] [1792576667.723375531] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[controller_server-7] [INFO] [1792576667.723735535] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[controller_server-7] [INFO] [1792576667.723758840] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[controller_server-7] [INFO] [1792576667.724161778] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[controller_server-7] [INFO] [1792576667.724344782] [controller_server]: TwirlingCritic instantiated with 1 power and 10.000000 weight.
+[controller_server-7] [INFO] [1792576667.724367449] [controller_server]: Critic loaded : mppi::critics::TwirlingCritic
+[controller_server-7] [INFO] [1792576667.726971062] [controller_server]: Optimizer reset
+[controller_server-7] [INFO] [1792576667.730368813] [MPPIController]: Configured MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1792576667.730411190] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-14] [INFO] [1792576667.737616713] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-8] [INFO] [1792576667.737996793] [smoother_server]: Configuring smoother server
+[smoother_server-8] [INFO] [1792576667.745828466] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-8] [INFO] [1792576667.749366368] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-14] [INFO] [1792576667.757674952] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-9] [INFO] [1792576667.757995873] [planner_server]: Configuring
+[planner_server-9] [INFO] [1792576667.758030290] [global_costmap.global_costmap]: Configuring
+[planner_server-9] [INFO] [1792576667.761869052] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-9] [INFO] [1792576667.765585018] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-9] [INFO] [1792576667.766263318] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1792576667.766297528] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1792576667.766714367] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-9] [INFO] [1792576667.770319438] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1792576667.770383630] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1792576667.772385643] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-9] [INFO] [1792576667.794107624] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlanner2D
+[planner_server-9] [INFO] [1792576667.794184837] [planner_server]: Configuring GridBased of type SmacPlanner2D
+[planner_server-9] [INFO] [1792576667.797192656] [planner_server]: Configured plugin GridBased of type SmacPlanner2D with tolerance 0.15, maximum iterations 1000000, max on approach iterations 1000, and allowing unknown traversal.
+[planner_server-9] [INFO] [1792576667.797266351] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-14] [INFO] [1792576667.805364447] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-10] [INFO] [1792576667.805758303] [behavior_server]: Configuring
+[behavior_server-10] [INFO] [1792576667.811670824] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-10] [INFO] [1792576667.813772554] [behavior_server]: Configuring spin
+[behavior_server-10] [INFO] [1792576667.818515339] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-10] [INFO] [1792576667.820451141] [behavior_server]: Configuring backup
+[behavior_server-10] [INFO] [1792576667.823945800] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-10] [INFO] [1792576667.826411249] [behavior_server]: Configuring drive_on_heading
+[behavior_server-10] [INFO] [1792576667.830490218] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-10] [INFO] [1792576667.832934033] [behavior_server]: Configuring wait
+[lifecycle_manager-14] [INFO] [1792576667.839223005] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1792576667.839556717] [bt_navigator]: Configuring
+[lifecycle_manager-14] [INFO] [1792576667.935246327] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1792576667.935542610] [waypoint_follower]: Configuring
+[waypoint_follower-12] [INFO] [1792576667.943361839] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[waypoint_follower-12] [INFO] [1792576667.943663877] [waypoint_follower]: Waypoint pause duration is set to zero, disabling task executor plugin.
+[lifecycle_manager-14] [INFO] [1792576667.944371293] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1792576667.944642565] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-14] [INFO] [1792576667.948083241] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1792576667.948344354] [controller_server]: Activating
+[controller_server-7] [INFO] [1792576667.948379125] [local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1792576667.948389977] [local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1792576667.948410255] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576668.452131711] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[wall_frames-5] [INFO] [1792576668.517065373] [wall_frames]: winter_dam: map frame on the face at [0. 0. 0.]
+[inspection_detector-4] [INFO] [1792576668.541833301] [inspection_detector]: winter_dam: 12 defects to find, log -> /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/results/inspection_log_winter_dam.csv
+[coverage_mission-15] [INFO] [1792576668.546465439] [coverage_mission]: winter_dam: area s 1.90..4.10 m, t -1.00..1.00 m
+[webots_controller_wcr-2] The Webots simulation world is not yet ready, pending until loading is done...
+[controller_server-7] [INFO] [1792576668.948614471] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576669.448535111] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576669.948642848] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576670.448603339] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576670.948727902] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576671.448638382] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576671.948727269] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576672.448666118] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576672.948645593] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576673.448725572] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [map_server-16]: process started with pid [812]
+[INFO] [lifecycle_manager-17]: process started with pid [814]
+[lifecycle_manager-17] [INFO] [1792576673.515931305] [lifecycle_manager_map]: Creating
+[lifecycle_manager-17] [INFO] [1792576673.523206086] [lifecycle_manager_map]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-17] [INFO] [1792576673.617414972] [lifecycle_manager_map]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-17] [INFO] [1792576673.617794001] [lifecycle_manager_map]: [34m[1mConfiguring map_server[0m[0m
+[map_server-16] [INFO] [1792576673.619366136] [map_server]: 
+[map_server-16] 	map_server lifecycle node launched. 
+[map_server-16] 	Waiting on external lifecycle transitions to activate
+[map_server-16] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-16] [INFO] [1792576673.619970343] [map_server]: Creating
+[map_server-16] [INFO] [1792576673.621900185] [map_server]: Configuring
+[map_server-16] [INFO] [1792576673.622107734] [map_io]: Loading yaml file: /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/wcr_description/worlds/maps/winter_dam.yaml
+[map_server-16] [INFO] [1792576673.664827603] [map_io]: resolution: 0.05
+[map_server-16] [INFO] [1792576673.664940478] [map_io]: origin[0]: -0.3
+[map_server-16] [INFO] [1792576673.664952613] [map_io]: origin[1]: -6.9
+[map_server-16] [INFO] [1792576673.664960423] [map_io]: origin[2]: 0
+[map_server-16] [INFO] [1792576673.664968717] [map_io]: free_thresh: 0.25
+[map_server-16] [INFO] [1792576673.664976065] [map_io]: occupied_thresh: 0.65
+[map_server-16] [INFO] [1792576673.664985258] [map_io]: mode: trinary
+[map_server-16] [INFO] [1792576673.664994086] [map_io]: negate: 0
+[map_server-16] [INFO] [1792576673.666489442] [map_io]: Loading image_file: /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/wcr_description/worlds/maps/winter_dam.pgm
+[map_server-16] [INFO] [1792576673.834039905] [map_io]: Read map /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/wcr_description/worlds/maps/winter_dam.pgm: 264 X 276 map @ 0.05 m/cell
+[lifecycle_manager-17] [INFO] [1792576673.842306320] [lifecycle_manager_map]: [34m[1mActivating map_server[0m[0m
+[map_server-16] [INFO] [1792576673.842967514] [map_server]: Activating
+[map_server-16] [INFO] [1792576673.846542490] [map_server]: Creating bond (map_server) to lifecycle manager.
+[planner_server-9] [INFO] [1792576673.847160904] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 264 X 276 at 0.050000 m/pix
+[controller_server-7] [INFO] [1792576673.948642556] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-17] [INFO] [1792576673.956711362] [lifecycle_manager_map]: Server map_server connected with bond.
+[lifecycle_manager-17] [INFO] [1792576673.956844487] [lifecycle_manager_map]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-17] [INFO] [1792576673.956859710] [lifecycle_manager_map]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-7] [INFO] [1792576674.448582329] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576674.948699684] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576675.448575325] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1792576675.948629120] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[webots_controller_wcr-2] [INFO] [1792576676.357052607] [wcr]: Controller successfully connected to robot in Webots simulation.
+[controller_server-7] [INFO] [1792576676.448745540] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[wall_frames-5] [INFO] [1792576676.535216977] [wall_frames]: map -> odom: start at x 1.500 m (up the face), y -0.000 m, yaw 0.0 deg (2.6 mm off the face plane)
+[controller_server-7] [INFO] [1792576676.948824987] [local_costmap.local_costmap]: start
+[controller_server-7] [WARN] [1792576677.150239149] [controller_server]: Parameter controller_server.verbose not found
+[controller_server-7] [INFO] [1792576677.151090099] [controller_server]: Optimizer reset
+[controller_server-7] [INFO] [1792576677.151389190] [MPPIController]: Activated MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1792576677.151577811] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576677.255704285] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-14] [INFO] [1792576677.256329649] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-8] [INFO] [1792576677.256739704] [smoother_server]: Activating
+[smoother_server-8] [INFO] [1792576677.256884567] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576677.359975557] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-14] [INFO] [1792576677.360031546] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-9] [INFO] [1792576677.360499765] [planner_server]: Activating
+[planner_server-9] [INFO] [1792576677.360666142] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1792576677.360691006] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1792576677.360894695] [global_costmap.global_costmap]: start
+[planner_server-9] [INFO] [1792576677.912303641] [planner_server]: Activating plugin GridBased of type SmacPlanner2D
+[planner_server-9] [INFO] [1792576677.913695599] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576678.018406048] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-14] [INFO] [1792576678.018596821] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-10] [INFO] [1792576678.019445473] [behavior_server]: Activating
+[behavior_server-10] [INFO] [1792576678.019642998] [behavior_server]: Activating spin
+[behavior_server-10] [INFO] [1792576678.019712844] [behavior_server]: Activating backup
+[behavior_server-10] [INFO] [1792576678.019737344] [behavior_server]: Activating drive_on_heading
+[behavior_server-10] [INFO] [1792576678.019758500] [behavior_server]: Activating wait
+[behavior_server-10] [INFO] [1792576678.019786184] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576678.127316711] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-14] [INFO] [1792576678.127467128] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1792576678.128170673] [bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1792576678.194379531] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576678.298798601] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-14] [INFO] [1792576678.298939374] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1792576678.299599627] [waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1792576678.299658178] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576678.405621154] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-14] [INFO] [1792576678.405743961] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1792576678.406446868] [velocity_smoother]: Activating
+[velocity_smoother-13] [INFO] [1792576678.406627272] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1792576678.511388254] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-14] [INFO] [1792576678.511540721] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1792576678.511613174] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[coverage_mission-15] [INFO] [1792576680.664922031] [coverage_mission]: wall camera footprint 10 x 15 cm, centre 0.22 m ahead / -0.07 m across of the base -> 17 lanes 12 cm apart, 17 segments, 35 poses (2.9 m of lanes skipped next to mapped obstacles)
+[coverage_mission-15] [INFO] [1792576680.711583960] [coverage_mission]: mission started
+[controller_server-7] [INFO] [1792576680.714350613] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576680.715237481] [controller_server]: Optimizer reset
+[inspection_detector-4] [INFO] [1792576680.951051573] [inspection_detector]: camera at [0.07 0.92 1.4 ], closest defect crack_0 1.13 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576683.019388558] [controller_server]: Reached the goal!
+[bt_navigator-11] [INFO] [1792576683.026314303] [bt_navigator]: Begin navigating from current location (1.75, -0.02) to (1.73, -0.85)
+[controller_server-7] [INFO] [1792576683.048784143] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [WARN] [1792576683.048968358] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-7] [INFO] [1792576684.343669112] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576685.343608813] [controller_server]: Passing new path to controller.
+[inspection_detector-4] [INFO] [1792576686.243465597] [inspection_detector]: camera at [0.66 1.06 1.58], closest defect weep_hole_2 0.80 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576686.343672210] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576687.343639057] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576688.443715414] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576689.443755005] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576689.946822413] [controller_server]: Reached the goal!
+[bt_navigator-11] [INFO] [1792576689.983407883] [bt_navigator]: Goal succeeded
+[coverage_mission-15] [INFO] [1792576690.095806135] [coverage_mission]: lane 1/17, coverage 2.5 %
+[controller_server-7] [INFO] [1792576690.100740548] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576692.324633834] [inspection_detector]: camera at [0.95 1.2  1.77], closest defect weep_hole_2 0.77 m away, 0 of its points in view (found 0/12)
+[inspection_detector-4] [INFO] [1792576698.500636679] [inspection_detector]: camera at [0.97 1.9  2.72], closest defect wet_patch_0 0.53 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576701.912864464] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576701.917991778] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576703.923946775] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576704.032816386] [coverage_mission]: lane 2/17, coverage 8.1 %
+[controller_server-7] [INFO] [1792576704.038163771] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576704.400281248] [inspection_detector]: camera at [0.88 2.19 3.12], closest defect wet_patch_0 0.47 m away, 0 of its points in view (found 0/12)
+[inspection_detector-4] [INFO] [1792576709.474612208] [inspection_detector]: camera at [0.83 1.48 2.16], closest defect crack_0 0.79 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576713.444109006] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576713.451045351] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576714.923123461] [inspection_detector]: camera at [0.79 0.98 1.48], closest defect weep_hole_2 0.62 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576715.653757496] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576715.716052586] [coverage_mission]: lane 3/17, coverage 14.3 %
+[controller_server-7] [INFO] [1792576715.723615937] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576720.002989106] [inspection_detector]: camera at [0.77 1.5  2.18], closest defect crack_0 0.72 m away, 0 of its points in view (found 0/12)
+[inspection_detector-4] [INFO] [1792576726.473046578] [inspection_detector]: camera at [0.75 2.14 3.04], closest defect wet_patch_0 0.31 m away, 0 of its points in view (found 0/12)
+[controller_server-7] [INFO] [1792576726.944185846] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576726.951525096] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576727.801396000] [inspection_detector]: DETECTED wet_patch wet_patch_0 at s 3.55 m, t -0.50 m (1/12)
+[controller_server-7] [INFO] [1792576728.456072187] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576728.534564920] [coverage_mission]: lane 4/17, coverage 17.8 %
+[controller_server-7] [INFO] [1792576728.540318601] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576731.344841724] [inspection_detector]: camera at [0.63 1.8  2.59], closest defect wet_patch_0 0.42 m away, 0 of its points in view (found 1/12)
+[inspection_detector-4] [INFO] [1792576736.515877664] [inspection_detector]: camera at [0.62 1.07 1.61], closest defect weep_hole_2 0.85 m away, 0 of its points in view (found 1/12)
+[controller_server-7] [INFO] [1792576737.742662347] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576737.749951511] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576739.654713075] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576739.704930317] [coverage_mission]: lane 5/17, coverage 24.0 %
+[controller_server-7] [INFO] [1792576739.708088185] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576741.431369961] [inspection_detector]: camera at [0.53 1.12 1.67], closest defect crack_0 0.92 m away, 0 of its points in view (found 1/12)
+[inspection_detector-4] [INFO] [1792576746.670634753] [inspection_detector]: camera at [0.5  1.82 2.61], closest defect wet_patch_0 0.38 m away, 0 of its points in view (found 1/12)
+[controller_server-7] [INFO] [1792576749.213317770] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576749.218768265] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576750.521462280] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576750.580062100] [coverage_mission]: lane 6/17, coverage 28.5 %
+[controller_server-7] [INFO] [1792576750.582744304] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576751.016350484] [inspection_detector]: camera at [0.4  2.12 3.02], closest defect wet_patch_0 0.19 m away, 21 of its points in view (found 1/12)
+[inspection_detector-4] [INFO] [1792576755.427546501] [inspection_detector]: camera at [0.36 1.41 2.05], closest defect crack_0 0.44 m away, 0 of its points in view (found 1/12)
+[controller_server-7] [INFO] [1792576761.511875864] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576761.517010934] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576762.647405008] [inspection_detector]: camera at [0.3  0.91 1.39], closest defect weep_hole_2 1.05 m away, 0 of its points in view (found 1/12)
+[controller_server-7] [INFO] [1792576763.020745484] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576763.087796499] [coverage_mission]: lane 7/17, coverage 34.6 %
+[controller_server-7] [INFO] [1792576763.095469976] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576766.994501279] [inspection_detector]: camera at [0.28 1.45 2.11], closest defect crack_0 0.33 m away, 0 of its points in view (found 1/12)
+[inspection_detector-4] [INFO] [1792576768.077921934] [inspection_detector]: DETECTED crack crack_0 at s 2.80 m, t -0.07 m (2/12)
+[inspection_detector-4] [INFO] [1792576770.852507545] [inspection_detector]: camera at [0.26 2.09 2.98], closest defect wet_patch_0 0.27 m away, 2 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576770.897487361] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576770.901333826] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576772.003834884] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576772.044348318] [coverage_mission]: lane 8/17, coverage 38.9 %
+[controller_server-7] [INFO] [1792576772.047965243] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576775.086971174] [inspection_detector]: camera at [0.14 1.7  2.45], closest defect crack_0 0.21 m away, 20 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576780.518835913] [inspection_detector]: camera at [0.12 0.98 1.47], closest defect crack_0 1.04 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576781.552892026] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576781.558787176] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576783.461444386] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576783.522492081] [coverage_mission]: lane 9/17, coverage 45.3 %
+[controller_server-7] [INFO] [1792576783.531759139] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576785.820416033] [inspection_detector]: camera at [0.03 1.11 1.65], closest defect crack_0 0.82 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576791.456708878] [inspection_detector]: camera at [0.02 1.8  2.59], closest defect crack_0 0.37 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576795.918362482] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576795.922794364] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576797.226828907] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576797.269427115] [coverage_mission]: lane 10/17, coverage 49.7 %
+[controller_server-7] [INFO] [1792576797.272020363] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576797.620137214] [inspection_detector]: camera at [-0.12  1.95  2.79], closest defect crack_0 0.64 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576800.868812244] [inspection_detector]: camera at [-0.14  1.24  1.83], closest defect crack_0 0.63 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576802.673616223] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576802.676930848] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576804.281582444] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576804.334096563] [coverage_mission]: lane 11/17, coverage 56.3 %
+[controller_server-7] [INFO] [1792576804.340048687] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576804.522118893] [inspection_detector]: camera at [-0.22  0.85  1.3 ], closest defect crack_0 1.28 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576808.791088900] [inspection_detector]: camera at [-0.23  1.5   2.18], closest defect crack_0 0.35 m away, 12 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576811.643886605] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576811.648134872] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576813.388698633] [inspection_detector]: camera at [-0.33  1.8   2.58], closest defect crack_0 0.54 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576813.452941240] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576813.521873270] [coverage_mission]: lane 12/17, coverage 59.7 %
+[controller_server-7] [INFO] [1792576813.527278280] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576817.641943322] [inspection_detector]: camera at [-0.35  1.15  1.71], closest defect crack_0 0.86 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576820.031291658] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576820.038716389] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576821.540871547] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576821.597610886] [coverage_mission]: lane 13/17, coverage 65.4 %
+[controller_server-7] [INFO] [1792576821.599860761] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576821.901674662] [inspection_detector]: camera at [-0.47  0.81  1.25], closest defect crack_0 1.42 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576825.973215929] [inspection_detector]: camera at [-0.48  1.48  2.15], closest defect crack_0 0.58 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576831.646489236] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576831.680014081] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576833.282268950] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576833.363341762] [coverage_mission]: lane 14/17, coverage 69.7 %
+[controller_server-7] [INFO] [1792576833.367458115] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576833.924159771] [inspection_detector]: camera at [-0.59  1.74  2.51], closest defect crack_0 0.71 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576838.414015854] [inspection_detector]: camera at [-0.6   1.01  1.52], closest defect crack_0 1.19 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576839.969409839] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576839.973046022] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576841.676861783] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576841.725008118] [coverage_mission]: lane 15/17, coverage 75.1 %
+[controller_server-7] [INFO] [1792576841.730156830] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576842.818011266] [inspection_detector]: camera at [-0.7   0.89  1.36], closest defect crack_0 1.40 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576847.579793517] [inspection_detector]: camera at [-0.71  1.59  2.3 ], closest defect crack_0 0.78 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576849.833134695] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576849.837876082] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576851.141673028] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576851.222744634] [coverage_mission]: lane 16/17, coverage 79.0 %
+[controller_server-7] [INFO] [1792576851.230152284] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576852.396685103] [inspection_detector]: camera at [-0.83  1.61  2.33], closest defect crack_0 0.91 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576856.936717812] [inspection_detector]: camera at [-0.85  0.88  1.34], closest defect crack_0 1.51 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576858.233465751] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1792576858.238327407] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576859.041520215] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576859.098372236] [coverage_mission]: lane 17/17, coverage 84.5 %
+[controller_server-7] [INFO] [1792576859.102807098] [controller_server]: Received a goal, begin computing control effort.
+[inspection_detector-4] [INFO] [1792576862.413971663] [inspection_detector]: camera at [-0.87  1.09  1.63], closest defect crack_0 1.27 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576872.359511463] [inspection_detector]: camera at [-0.9   1.69  2.44], closest defect crack_0 0.98 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576872.648961055] [controller_server]: Reached the goal!
+[coverage_mission-15] [INFO] [1792576872.699161686] [coverage_mission]: all lanes done, coverage 85.2 %: returning to the start
+[bt_navigator-11] [INFO] [1792576872.702850019] [bt_navigator]: Begin navigating from current location (3.34, 0.98) to (1.85, -0.00)
+[controller_server-7] [INFO] [1792576872.724439036] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1792576873.824628079] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576874.824708993] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576875.824735640] [controller_server]: Passing new path to controller.
+[inspection_detector-4] [INFO] [1792576876.191245882] [inspection_detector]: camera at [-0.28  1.2   1.78], closest defect crack_0 0.75 m away, 0 of its points in view (found 2/12)
+[controller_server-7] [INFO] [1792576876.824703091] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576877.924688264] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1792576878.729729187] [controller_server]: Reached the goal!
+[bt_navigator-11] [INFO] [1792576878.763413445] [bt_navigator]: Goal succeeded
+[coverage_mission-15] [INFO] [1792576878.806400241] [coverage_mission]: 
+[coverage_mission-15] WCR coverage mission (Nav2 FollowPath / NavigateToPose): winter_dam
+[coverage_mission-15]   area            s 1.90..4.10 m, t -1.00..1.00 m (4.4 m2)
+[coverage_mission-15]   coverage        85.5 % of the inspectable area (81.5 % incl. obstacle footprints)
+[coverage_mission-15]   route           17 lane segments (0 not completed), 36 legs (0 not completed), back at the start: yes
+[coverage_mission-15]   path length     36.1 m in 194 s sim time
+[coverage_mission-15]   defects found   2: wet_patch_0, crack_0
+[coverage_mission-15]   obstacle        bush_0     on the map, in the costmap
+[inspection_detector-4] [INFO] [1792576879.816173529] [inspection_detector]: camera at [0.1  0.81 1.25], closest defect weep_hole_2 1.23 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576883.256646731] [inspection_detector]: camera at [0.1  0.81 1.25], closest defect weep_hole_2 1.23 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576889.172532105] [inspection_detector]: camera at [0.1  0.81 1.25], closest defect weep_hole_2 1.23 m away, 0 of its points in view (found 2/12)
+[inspection_detector-4] [INFO] [1792576894.120892469] [inspection_detector]: camera at [0.1  0.81 1.25], closest defect weep_hole_2 1.23 m away, 0 of its points in view (found 2/12)

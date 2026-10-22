@@ -1,0 +1,147 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Help Height: 0
+    Property Tree Widget:
+      Expanded: ~
+      Splitter Ratio: 0.55
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Wall grid (map = the face, x up)
+      Enabled: true
+      Cell Size: 0.5
+      Plane Cell Count: 40
+      Reference Frame: map
+      Color: 110; 110; 120
+    - Class: rviz_default_plugins/Map
+      Name: Wall map (Nav2)
+      Enabled: true
+      Topic:
+        Value: /map
+        Durability Policy: Transient Local
+      Color Scheme: map
+      Alpha: 0.35
+      Draw Behind: true
+    - Class: rviz_default_plugins/Map
+      Name: Global costmap
+      Enabled: true
+      Topic:
+        Value: /global_costmap/costmap
+        Durability Policy: Volatile
+      Color Scheme: costmap
+      Alpha: 0.35
+    - Class: rviz_default_plugins/Map
+      Name: Coverage (seen by the wall camera)
+      Enabled: true
+      Topic:
+        Value: /coverage/map
+        Durability Policy: Transient Local
+      Color Scheme: costmap
+      Alpha: 0.6
+    - Class: rviz_default_plugins/Path
+      Name: Nav2 plan
+      Enabled: true
+      Topic:
+        Value: /plan
+      Color: 25; 255; 120
+      Line Style: Lines
+    - Class: rviz_default_plugins/Path
+      Name: Coverage lanes
+      Enabled: true
+      Topic:
+        Value: /coverage/lanes
+        Durability Policy: Transient Local
+      Color: 255; 255; 255
+      Line Style: Lines
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: false
+      Show Names: false
+      Marker Scale: 0.3
+    - Class: rviz_default_plugins/LaserScan
+      Name: Lidar /scan
+      Enabled: true
+      Topic:
+        Value: /scan
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+      Style: Flat Squares
+      Size (m): 0.06
+      Color Transformer: FlatColor
+      Color: 255; 170; 0
+      Decay Time: 0
+    - Class: rviz_default_plugins/Odometry
+      Name: Wheel odometry /odom
+      Enabled: true
+      Topic:
+        Value: /odom
+        Reliability Policy: Reliable
+      Keep: 200
+      Position Tolerance: 0.05
+      Angle Tolerance: 0.3
+      Shape:
+        Value: Axes
+        Axes Length: 0.1
+        Axes Radius: 0.01
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Inspection (defects, obstacles, camera footprint)
+      Enabled: true
+      Topic:
+        Value: /inspection/markers
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/Image
+      Name: Wall camera (detections boxed)
+      Enabled: true
+      Topic:
+        Value: /inspection/wall_camera_annotated
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+    - Class: rviz_default_plugins/Image
+      Name: Front camera
+      Enabled: true
+      Topic:
+        Value: /front_camera/image_color
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+  Global Options:
+    Fixed Frame: map
+    Background Color: 40; 42; 48
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Value: /goal_pose
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      Target Frame: base_link
+      Distance: 4.0
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.75
+      Yaw: 3.6
+      Near Clip Distance: 0.01
+Window Geometry:
+  Height: 950
+  Width: 1500
+  Displays:
+    collapsed: false

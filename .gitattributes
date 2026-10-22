@@ -1,0 +1,12 @@
+# text files are stored with LF; shell scripts keep LF on every checkout (they run in WSL)
+* text=auto
+*.sh text eol=lf
+*.bash text eol=lf
+# binary assets: never touch line endings or diff them
+*.glb binary
+*.stl binary
+*.step binary
+*.png binary
+*.jpg binary
+*.pgm binary
+*.zip binary

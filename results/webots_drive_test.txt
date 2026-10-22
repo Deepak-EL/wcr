@@ -1,0 +1,9 @@
+WEBOTS drive test: PASS
+settle     moved 0.007 m  z -103.707  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.000
+up         moved 0.959 m  z -102.748  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.120
+turn_left  moved 0.022 m  z -102.770  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.000
+crab_left  moved 0.479 m  z -103.219  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.112
+crab_right moved 0.477 m  z -102.775  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.112
+turn_right moved 0.022 m  z -102.797  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.003
+down       moved 0.719 m  z -103.517  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.120
+stop       moved 0.001 m  z -103.518  surface  90.7 deg  adhesion 42.6 N  off-plane speed 0.000

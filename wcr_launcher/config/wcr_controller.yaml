@@ -1,0 +1,56 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      update_rate: 1000  # Hz
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      driving_velocity_controller:
+        type: forward_command_controller/ForwardCommandController
+
+      steering_position_controller:
+        type: forward_command_controller/ForwardCommandController
+
+      propeller_effort_controller:
+        type: forward_command_controller/ForwardCommandController
+
+  joint_state_broadcaster:
+    ros__parameters:
+      joints:
+        - FL_wheel
+        - BL_wheel
+        - BR_wheel
+        - FR_wheel
+        - FL_steering
+        - BL_steering
+        - BR_steering
+        - FR_steering
+        - EDF_propeller_joint
+
+  driving_velocity_controller:
+    ros__parameters:
+      joints:
+        - FL_wheel
+        - BL_wheel
+        - BR_wheel
+        - FR_wheel
+      interface_name: velocity
+
+  steering_position_controller:
+    ros__parameters:
+      joints:
+        - FL_steering
+        - BL_steering
+        - BR_steering
+        - FR_steering
+      interface_name: position
+      command: [0.0, 0.0, 0.0, 0.0]
+
+  # EDF-only robot (side_propellers: false). Adhesion force is commanded through the
+  # Thruster plugin (thrust/edf), not through this controller.
+  propeller_effort_controller:
+    ros__parameters:
+      joints:
+        - EDF_propeller_joint
+      interface_name: effort

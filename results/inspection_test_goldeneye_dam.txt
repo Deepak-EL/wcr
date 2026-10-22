@@ -1,0 +1,33 @@
+== inspection test (goldeneye_dam, layout fixed, seed 1) Sun Oct 18 07:50:09 PM IST 2026
+-- robot after the climb (ground truth / odom)
+x: -28.17590983629484
+y: -4.950682691020356
+z: -3.351606311177412
+---
+A message was lost!!!
+	total count change:3
+	total count: 3---
+A message was lost!!!
+	total count change:5
+	total count: 8---
+x: 3.600851748199797
+y: 3.1235914884183054e-10
+z: 0.0
+---
+-- detections
+{"time": 12.28, "id": "crack_0", "type": "crack", "s": 2.1, "t": -0.07, "position": [-28.2771, -5.6657, -5.5306], "robot": [-28.361, -5.715, -5.736], "points_in_view": 7, "visible": 0.04}
+{"time": 25.88, "id": "wet_patch_0", "type": "wet_patch", "s": 3.8, "t": -0.05, "position": [-28.1712, -5.1434, -3.9162], "robot": [-28.241, -5.218, -4.186], "points_in_view": 6, "visible": 0.04}
+-- detector log
+[INFO] [launch]: All log files can be found below /home/deepakel176/.ros/log/2026-10-18-19-49-14-246650-NITROV16S-5536
+[INFO] [inspection_detector-4]: process started with pid [5559]
+[inspection_detector-4] [INFO] [1792333155.312293250] [inspection_detector]: goldeneye_dam: 9 defects to find, log -> /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/results/inspection_log_goldeneye_dam.csv
+[inspection_detector-4] [INFO] [1792333170.644628715] [inspection_detector]: camera at [-28.36  -6.03  -6.37], closest defect crack_2 0.52 m away, 0 of its points in view (found 0/9)
+[inspection_detector-4] [INFO] [1792333177.012779597] [inspection_detector]: camera at [-28.32  -5.84  -5.8 ], closest defect crack_0 0.32 m away, 0 of its points in view (found 0/9)
+[inspection_detector-4] [INFO] [1792333180.207735986] [inspection_detector]: DETECTED crack crack_0 at s 2.10 m, t -0.07 m (1/9)
+[inspection_detector-4] [INFO] [1792333183.143315306] [inspection_detector]: camera at [-28.28  -5.66  -5.23], closest defect crack_0 0.30 m away, 0 of its points in view (found 1/9)
+[inspection_detector-4] [INFO] [1792333188.656549395] [inspection_detector]: camera at [-28.23  -5.48  -4.66], closest defect wet_patch_0 0.82 m away, 0 of its points in view (found 1/9)
+[inspection_detector-4] [INFO] [1792333194.119494081] [inspection_detector]: camera at [-28.19  -5.3   -4.09], closest defect wet_patch_0 0.23 m away, 0 of its points in view (found 1/9)
+[inspection_detector-4] [INFO] [1792333195.324415776] [inspection_detector]: DETECTED wet_patch wet_patch_0 at s 3.80 m, t -0.05 m (2/9)
+[inspection_detector-4] [INFO] [1792333202.887015908] [inspection_detector]: camera at [-28.14  -5.11  -3.52], closest defect wet_patch_0 0.40 m away, 0 of its points in view (found 2/9)
+[inspection_detector-4] [INFO] [1792333209.685739448] [inspection_detector]: camera at [-28.11  -5.    -3.15], closest defect wet_patch_0 0.78 m away, 0 of its points in view (found 2/9)
+[inspection_detector-4] [INFO] [1792333216.353306845] [inspection_detector]: camera at [-28.11  -5.    -3.15], closest defect wet_patch_0 0.78 m away, 0 of its points in view (found 2/9)

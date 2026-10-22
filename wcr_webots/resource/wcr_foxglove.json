@@ -1,0 +1,72 @@
+{
+  "configById": {
+    "3D!wcr": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 6,
+        "phi": 40,
+        "thetaOffset": 180,
+        "targetOffset": [0, 0, 0],
+        "target": [0, 0, 0],
+        "targetOrientation": [0, 0, 0, 1],
+        "fovy": 45,
+        "near": 0.01,
+        "far": 5000
+      },
+      "followMode": "follow-position",
+      "followTf": "map",
+      "scene": { "enableStats": false, "backgroundColor": "#282a30" },
+      "transforms": { "showLabel": false, "axisScale": 0.5 },
+      "topics": {
+        "/map": { "visible": true, "colorMode": "map", "alpha": 0.35 },
+        "/global_costmap/costmap": { "visible": true, "colorMode": "costmap", "alpha": 0.35 },
+        "/coverage/map": { "visible": true, "colorMode": "costmap", "alpha": 0.6 },
+        "/plan": { "visible": true, "type": "line", "lineWidth": 0.03, "gradient": ["#19ff78ff", "#19ff78ff"] },
+        "/coverage/lanes": { "visible": true, "type": "line", "lineWidth": 0.01, "gradient": ["#ffffffaa", "#ffffffaa"] },
+        "/scan": { "visible": true, "colorMode": "flat", "flatColor": "#ffaa00ff", "pointSize": 5 },
+        "/inspection/markers": { "visible": true },
+        "/odometry/filtered": { "visible": false }
+      },
+      "layers": {
+        "grid": {
+          "visible": true, "frameLocked": true, "label": "Wall grid (map = the face, x up)",
+          "instanceId": "grid", "layerId": "foxglove.Grid", "frameId": "map",
+          "size": 20, "divisions": 40, "lineWidth": 1, "color": "#9e9e9e55",
+          "position": [0, 0, 0], "rotation": [0, 0, 0], "order": 1
+        },
+        "urdf": {
+          "visible": true, "label": "WCR robot", "instanceId": "urdf", "layerId": "foxglove.Urdf",
+          "sourceType": "topic", "topic": "/robot_description", "order": 2
+        }
+      },
+      "publish": { "type": "pose", "poseTopic": "/goal_pose", "poseEstimateTopic": "/initialpose" }
+    },
+    "Image!wall": { "imageMode": { "imageTopic": "/inspection/wall_camera_annotated" } },
+    "Image!front": { "imageMode": { "imageTopic": "/front_camera/image_color" } },
+    "Plot!coverage": {
+      "paths": [{ "value": "/coverage/percent.data", "enabled": true, "timestampMethod": "receiveTime", "label": "coverage %" }],
+      "showLegend": true, "isSynced": true, "minYValue": 0, "maxYValue": 100
+    },
+    "RawMessages!status": { "topicPath": "/coverage/status.data", "diffEnabled": false, "expansion": "all" },
+    "RawMessages!detections": { "topicPath": "/inspection/detections", "diffEnabled": false, "expansion": "all" }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": { "speed": 1 },
+  "layout": {
+    "first": {
+      "first": "3D!wcr",
+      "second": { "first": "Plot!coverage", "second": "RawMessages!status", "direction": "row", "splitPercentage": 60 },
+      "direction": "column",
+      "splitPercentage": 78
+    },
+    "second": {
+      "first": { "first": "Image!wall", "second": "Image!front", "direction": "column" },
+      "second": "RawMessages!detections",
+      "direction": "column",
+      "splitPercentage": 78
+    },
+    "direction": "row",
+    "splitPercentage": 62
+  }
+}

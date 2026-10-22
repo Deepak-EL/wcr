@@ -1,0 +1,77 @@
+== ROS-Webots test (winter_dam) Sun Oct 18 06:41:50 PM IST 2026
+-- topics
+/adhesion
+/clock
+/cmd_vel
+/front_camera/camera_info
+/front_camera/image_color
+/ground_truth
+/imu
+/joint_states
+/odom
+/parameter_events
+/remove_urdf_robot
+/robot_description
+/rosout
+/scan
+/scan/point_cloud
+/tf
+/tf_static
+/wall_camera/camera_info
+/wall_camera/image_color
+rate /scan: average rate: 9.022
+rate /wall_camera/image_color: average rate: 6.628
+rate /front_camera/image_color: average rate: 9.260
+rate /imu: average rate: 79.169
+rate /odom: average rate: 45.805
+rate /joint_states: average rate: 46.242
+rate /clock: none
+-- start
+x: -1.1785215051226455e-06
+y: 5.287778818963949e-18
+z: 0.0
+---
+A message was lost!!!
+	total count change:1
+	total count: 1---
+x: -8.790637896623284e-07
+y: 1.1504650398381424
+z: 1.5573049755419215
+---
+data: 17.55170440673828
+---
+-- drive 5 s at 0.12 m/s up the face
+x: 0.5462222400438745
+y: 1.4919276197754286e-11
+z: 0.0
+---
+A message was lost!!!
+	total count change:1
+	total count: 1---
+x: -1.9306786914530943e-06
+y: 1.4734557612824042
+z: 1.99452552441161
+---
+scan finite beams: 157
+-- launch log (tail)
+[INFO] [launch]: All log files can be found below /home/deepakel176/.ros/log/2026-10-18-18-41-42-665151-NITROV16S-2524
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [webots_controller_wcr-1]: process started with pid [2540]
+[INFO] [robot_state_publisher-2]: process started with pid [2542]
+[robot_state_publisher-2] [INFO] [1792329102.884570569] [robot_state_publisher]: got segment BL_steering_link
+[robot_state_publisher-2] [INFO] [1792329102.884723179] [robot_state_publisher]: got segment BL_wheel_link
+[robot_state_publisher-2] [INFO] [1792329102.884732410] [robot_state_publisher]: got segment BR_steering_link
+[robot_state_publisher-2] [INFO] [1792329102.884735794] [robot_state_publisher]: got segment BR_wheel_link
+[robot_state_publisher-2] [INFO] [1792329102.884738764] [robot_state_publisher]: got segment FL_steering_link
+[robot_state_publisher-2] [INFO] [1792329102.884741714] [robot_state_publisher]: got segment FL_wheel_link
+[robot_state_publisher-2] [INFO] [1792329102.884744464] [robot_state_publisher]: got segment FR_steering_link
+[robot_state_publisher-2] [INFO] [1792329102.884747297] [robot_state_publisher]: got segment FR_wheel_link
+[robot_state_publisher-2] [INFO] [1792329102.884750225] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792329102.884752977] [robot_state_publisher]: got segment chassis_link
+[robot_state_publisher-2] [INFO] [1792329102.884755880] [robot_state_publisher]: got segment front_camera_link
+[robot_state_publisher-2] [INFO] [1792329102.884758853] [robot_state_publisher]: got segment front_camera_optical
+[robot_state_publisher-2] [INFO] [1792329102.884761998] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1792329102.884764719] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-2] [INFO] [1792329102.884767385] [robot_state_publisher]: got segment wall_camera_link
+[robot_state_publisher-2] [INFO] [1792329102.884770162] [robot_state_publisher]: got segment wall_camera_optical
+[webots_controller_wcr-1] [INFO] [1792329103.532197772] [wcr]: Controller successfully connected to robot in Webots simulation.

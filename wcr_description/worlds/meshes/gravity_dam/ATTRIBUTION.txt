@@ -1,0 +1,4 @@
+"Gravity Dam" by USACE Sacramento District
+https://sketchfab.com/3d-models/gravity-dam-d761a8b4ee184839912d41aefe6f096d
+License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Changes: re-oriented (Z-up, upstream face toward -y), recentred, converted to OBJ, normals recomputed.

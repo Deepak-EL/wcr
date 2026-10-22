@@ -1,0 +1,38 @@
+# Gazebo Launch Parameters
+
+# Simulation mode
+sim: true
+
+# Robot variant (classic/effort/velocity/mimic/mix/mock)
+variant: "mock"
+namespace: "wcr"
+rviz: true
+rviz_config: "wcr_sensors.rviz"
+
+# URDF file
+urdf_file: "wcr.urdf.xacro"
+
+# Gazebo settings
+use_sim_time: true
+gz_args: "-r -v3 --render-engine-gui ogre"
+gui_software_gl: false   # true = draw the Gazebo window on the CPU (slow; avoids the WSLg GPU path)
+gui_adapter: ""          # GPU for the Gazebo window only: "" = same as the sim (NVIDIA), "Intel" = WSLg's own GPU
+
+# EDF adhesion controller (wcr_climb): auto (from IMU surface angle) / fixed / off
+adhesion: "auto"
+adhesion_force: 30.0     # N; used by 'fixed' and held at startup until the IMU reports
+
+# World file (in wcr_description/worlds)
+#   dam_world.sdf  - Sketchfab dam scan, robot spawns on the downstream face (tools/build_dam_world.py)
+#   ramp_world.sdf - original curved ramp test
+world_file: "dam_world.sdf"
+
+# Spawn pose. If world_geometry is set, the pose is read from its `spawn:` block
+# (generated with the world) and the values below are ignored.
+world_geometry: "dam_geometry.yaml"
+spawn_x: 1.0
+spawn_y: 0.0
+spawn_z_height: 0.2
+spawn_roll: 0.0
+spawn_pitch: 0.0
+spawn_yaw: 0.0

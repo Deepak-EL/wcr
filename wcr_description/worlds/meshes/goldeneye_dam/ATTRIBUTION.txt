@@ -1,0 +1,4 @@
+"GoldenEye 007 - Dam Level Baked" by Vince_Crusty
+https://sketchfab.com/3d-models/goldeneye-007-dam-level-baked-94a3dfb06fc2480fb19f1db3efa83169
+License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Changes: rotated to Z-up, animated (skinned) birds removed, made two-sided, split per mesh.

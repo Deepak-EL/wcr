@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <ros>
+        <namespace>$(arg namespace)</namespace>
+      </ros>
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <xacro:if value="${side_propellers}">
+        <parameters>$(find wcr_launcher)/config/wcr_controller_side_props.yaml</parameters>
+      </xacro:if>
+      <xacro:unless value="${side_propellers}">
+        <parameters>$(find wcr_launcher)/config/wcr_controller.yaml</parameters>
+      </xacro:unless>
+      <controller_manager_name>controller_manager</controller_manager_name>
+    </plugin>
+    <!-- EDF adhesion. cmd_thrust [N] = total force pressing the robot onto the surface
+         (fan thrust + skirt suction); the joint axis points into the surface.
+         The thruster wrench is applied directly (velocity_control false); the rotor
+         speed it drives is cosmetic, so the PID gain is kept small. -->
+    <plugin filename="ignition-gazebo-thruster-system" name="ignition::gazebo::systems::Thruster">
+      <namespace>$(arg namespace)</namespace>
+      <joint_name>EDF_propeller_joint</joint_name>
+      <thrust_coefficient>$(arg thrust_coefficient_edf)</thrust_coefficient>
+      <fluid_density>1.225</fluid_density>
+      <propeller_diameter>0.069</propeller_diameter>
+      <velocity_control>false</velocity_control>
+      <p_gain>0.0001</p_gain>
+      <max_thrust_cmd>$(arg max_thrust_cmd_edf)</max_thrust_cmd>
+      <min_thrust_cmd>0.0</min_thrust_cmd>
+    </plugin>
+    <!-- Ground truth (world frame) for tests and for checking localization -->
+    <plugin filename="ignition-gazebo-odometry-publisher-system" name="ignition::gazebo::systems::OdometryPublisher">
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <dimensions>3</dimensions>
+    </plugin>
+    <xacro:if value="${side_propellers}">
+    <plugin filename="ignition-gazebo-thruster-system" name="ignition::gazebo::systems::Thruster">
+      <namespace>$(arg namespace)</namespace>
+      <joint_name>FL_propeller_joint</joint_name>
+      <thrust_coefficient>$(arg thrust_coefficient_propeller)</thrust_coefficient>
+      <fluid_density>1.225</fluid_density>
+      <propeller_diameter>0.2286</propeller_diameter>
+      <velocity_control>true</velocity_control>
+      <max_thrust_cmd>$(arg max_thrust_cmd_propeller)</max_thrust_cmd>
+    </plugin>
+    <plugin filename="ignition-gazebo-thruster-system" name="ignition::gazebo::systems::Thruster">
+      <namespace>$(arg namespace)</namespace>
+      <joint_name>FR_propeller_joint</joint_name>
+      <thrust_coefficient>$(arg thrust_coefficient_propeller)</thrust_coefficient>
+      <fluid_density>1.225</fluid_density>
+      <propeller_diameter>0.2286</propeller_diameter>
+      <velocity_control>true</velocity_control>
+      <max_thrust_cmd>$(arg max_thrust_cmd_propeller)</max_thrust_cmd>
+    </plugin>
+    <plugin filename="ignition-gazebo-thruster-system" name="ignition::gazebo::systems::Thruster">
+      <namespace>$(arg namespace)</namespace>
+      <joint_name>BL_propeller_joint</joint_name>
+      <thrust_coefficient>$(arg thrust_coefficient_propeller)</thrust_coefficient>
+      <fluid_density>1.225</fluid_density>
+      <propeller_diameter>0.2286</propeller_diameter>
+      <velocity_control>true</velocity_control>
+      <max_thrust_cmd>$(arg max_thrust_cmd_propeller)</max_thrust_cmd>
+    </plugin>
+    <plugin filename="ignition-gazebo-thruster-system" name="ignition::gazebo::systems::Thruster">
+      <namespace>$(arg namespace)</namespace>
+      <joint_name>BR_propeller_joint</joint_name>
+      <thrust_coefficient>$(arg thrust_coefficient_propeller)</thrust_coefficient>
+      <fluid_density>1.225</fluid_density>
+      <propeller_diameter>0.2286</propeller_diameter>
+      <velocity_control>true</velocity_control>
+      <max_thrust_cmd>$(arg max_thrust_cmd_propeller)</max_thrust_cmd>
+    </plugin>
+    </xacro:if>
+  </gazebo>
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <update_rate>100</update_rate>
+      <always_on>true</always_on>
+      <topic>/$(arg namespace)/imu</topic>
+      <visualize>true</visualize>
+      <imu>
+          <!-- report orientation against world ENU, not the pose at spawn (the robot spawns on the face) -->
+          <orientation_reference_frame>
+              <localization>ENU</localization>
+          </orientation_reference_frame>
+          <angular_velocity>
+              <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.001</stddev>
+              </noise>
+          </angular_velocity>
+          <linear_acceleration>
+              <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+              </noise>
+          </linear_acceleration>
+      </imu>
+      <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu">
+      </plugin>
+      <gz_frame_id>imu_link</gz_frame_id>
+    </sensor>
+  </gazebo>
+  <gazebo reference="t265_link">
+    <sensor type="camera" name="t265_camera">
+      <update_rate>30.0</update_rate>
+      <always_on>true</always_on>
+      <topic>/$(arg namespace)/camera</topic>
+      <visualize>true</visualize>
+      <camera name="t265">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.0005</stddev>
+        </noise>
+      </camera>
+      <gz_frame_id>t265_link</gz_frame_id>
+    </sensor>
+  </gazebo>
+  <gazebo reference="optical_flow_link">
+    <sensor type="camera" name="optical_flow_camera">
+      <update_rate>50.0</update_rate>
+      <always_on>true</always_on>
+      <topic>/$(arg namespace)/optical_flow/image_raw</topic>
+      <visualize>false</visualize>
+      <camera name="optical_flow">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>320</width>
+          <height>240</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.0005</stddev>
+        </noise>
+      </camera>
+      <gz_frame_id>optical_flow_link</gz_frame_id>
+    </sensor>
+  </gazebo>
+  <gazebo reference="barometer_link">
+    <sensor name="barometer_sensor" type="air_pressure">
+      <update_rate>25</update_rate>
+      <always_on>true</always_on>
+      <topic>/$(arg namespace)/pressure</topic>
+      <visualize>false</visualize>
+      <air_pressure>
+        <reference_altitude>0</reference_altitude>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>10.0</stddev>
+        </noise>
+      </air_pressure>
+      <plugin filename="libignition-gazebo-air-pressure-system.so" name="ignition::gazebo::systems::AirPressure">
+      </plugin>
+      <gz_frame_id>barometer_link</gz_frame_id>
+    </sensor>
+  </gazebo>
+  <gazebo reference="distance_sensor_link">
+    <sensor name="distance_sensor" type="gpu_lidar">
+      <update_rate>20</update_rate>
+      <always_on>true</always_on>
+      <topic>/$(arg namespace)/distance</topic>
+      <visualize>true</visualize>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.05</min>
+          <max>5.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.0005</stddev>
+        </noise>
+      </lidar>
+      <gz_frame_id>distance_sensor_link</gz_frame_id>
+    </sensor>
+  </gazebo>
+  <gazebo reference="FL_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </gazebo>
+  <gazebo reference="FR_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </gazebo>
+  <gazebo reference="BL_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </gazebo>
+  <gazebo reference="BR_wheel_link">
+    <collision>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </gazebo>
+</robot>

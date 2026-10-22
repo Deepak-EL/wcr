@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- webots_ros2_driver description of the Webots WCR: which devices are published on which
+     topics, plus the WCR plugin (adhesion, 4WIS drive, odometry). Frame names match wcr.urdf. -->
+<robot name="wcr">
+  <webots>
+    <device reference="lidar" type="Lidar">
+      <ros>
+        <topicName>/scan</topicName>
+        <frameName>lidar_link</frameName>
+        <updateRate>10</updateRate>
+        <alwaysOn>true</alwaysOn>
+      </ros>
+    </device>
+    <device reference="wall_camera" type="Camera">
+      <ros>
+        <topicName>/wall_camera</topicName>
+        <frameName>wall_camera_optical</frameName>
+        <updateRate>15</updateRate>
+        <alwaysOn>true</alwaysOn>
+      </ros>
+    </device>
+    <device reference="front_camera" type="Camera">
+      <ros>
+        <topicName>/front_camera</topicName>
+        <frameName>front_camera_optical</frameName>
+        <updateRate>15</updateRate>
+        <alwaysOn>true</alwaysOn>
+      </ros>
+    </device>
+    <plugin type="webots_ros2_driver::Ros2IMU">
+      <enabled>true</enabled>
+      <topicName>/imu</topicName>
+      <alwaysOn>true</alwaysOn>
+      <frameName>imu_link</frameName>
+      <inertialUnitName>imu</inertialUnitName>
+      <gyroName>gyro</gyroName>
+      <accelerometerName>accelerometer</accelerometerName>
+      <updateRate>100</updateRate>
+    </plugin>
+    <plugin type="wcr_webots.wcr_driver.WcrDriver">
+      <publishPeriodMs>20</publishPeriodMs>
+    </plugin>
+  </webots>
+</robot>

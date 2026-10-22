@@ -1,0 +1,24 @@
+newmtl dam_0
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd dam_tex_0.jpg
+
+newmtl dam_1
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd dam_tex_1.jpg
+
+newmtl dam_2
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd dam_tex_2.jpg
+
+newmtl dam_3
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd dam_tex_3.jpg
+

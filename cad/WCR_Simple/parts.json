@@ -1,0 +1,155 @@
+{
+ "units": "mm",
+ "step": "wcr_simple.step",
+ "joints": [
+  {
+   "name": "edf_joint",
+   "parent": "chassis",
+   "child": "edf_rotor",
+   "at": [
+    0,
+    0,
+    10.36
+   ],
+   "axis": "z"
+  },
+  {
+   "name": "FL_steering_joint",
+   "parent": "chassis",
+   "child": "FL_steering_pod",
+   "at": [
+    112.5,
+    112.5,
+    60.65
+   ],
+   "axis": "z",
+   "limits": [
+    -90,
+    90
+   ]
+  },
+  {
+   "name": "FL_wheel_joint",
+   "parent": "FL_steering_pod",
+   "child": "FL_wheel",
+   "at": [
+    112.5,
+    112.5,
+    25.4
+   ],
+   "axis": "y"
+  },
+  {
+   "name": "BL_steering_joint",
+   "parent": "chassis",
+   "child": "BL_steering_pod",
+   "at": [
+    -112.5,
+    112.5,
+    60.65
+   ],
+   "axis": "z",
+   "limits": [
+    -90,
+    90
+   ]
+  },
+  {
+   "name": "BL_wheel_joint",
+   "parent": "BL_steering_pod",
+   "child": "BL_wheel",
+   "at": [
+    -112.5,
+    112.5,
+    25.4
+   ],
+   "axis": "y"
+  },
+  {
+   "name": "FR_steering_joint",
+   "parent": "chassis",
+   "child": "FR_steering_pod",
+   "at": [
+    112.5,
+    -112.5,
+    60.65
+   ],
+   "axis": "z",
+   "limits": [
+    -90,
+    90
+   ]
+  },
+  {
+   "name": "FR_wheel_joint",
+   "parent": "FR_steering_pod",
+   "child": "FR_wheel",
+   "at": [
+    112.5,
+    -112.5,
+    25.4
+   ],
+   "axis": "y"
+  },
+  {
+   "name": "BR_steering_joint",
+   "parent": "chassis",
+   "child": "BR_steering_pod",
+   "at": [
+    -112.5,
+    -112.5,
+    60.65
+   ],
+   "axis": "z",
+   "limits": [
+    -90,
+    90
+   ]
+  },
+  {
+   "name": "BR_wheel_joint",
+   "parent": "BR_steering_pod",
+   "child": "BR_wheel",
+   "at": [
+    -112.5,
+    -112.5,
+    25.4
+   ],
+   "axis": "y"
+  },
+  {
+   "name": "sensor_mounts_fixed",
+   "parent": "chassis",
+   "child": "sensor_mounts",
+   "at": [
+    0,
+    0,
+    0
+   ],
+   "axis": "rigid"
+  },
+  {
+   "name": "lidar_fixed",
+   "parent": "chassis",
+   "child": "lidar",
+   "at": [
+    0,
+    0,
+    0
+   ],
+   "axis": "rigid"
+  },
+  {
+   "name": "wall_camera_fixed",
+   "parent": "chassis",
+   "child": "wall_camera",
+   "at": [
+    0,
+    0,
+    0
+   ],
+   "axis": "rigid"
+  }
+ ],
+ "groups": []
+}

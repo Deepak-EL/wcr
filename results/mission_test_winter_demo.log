@@ -1,0 +1,121 @@
+﻿[20 s] process started with pid [548]
+[42 s] segment 1/21 (lane t -0.85 m), coverage 0.0 %
+[64 s] segment 1/21 (lane t -0.85 m), coverage 0.0 %
+[84 s] segment 2/21 (lane t -0.85 m), coverage 1.5 %
+[107 s] segment 2/21 (lane t -0.85 m), coverage 1.5 %
+[127 s] segment 2/21 (lane t -0.85 m), coverage 1.5 %
+[149 s] segment 2/21 (lane t -0.85 m), coverage 1.5 %
+[172 s] segment 2/21 (lane t -0.85 m), coverage 1.5 %
+[192 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[215 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[235 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[257 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[279 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[299 s] segment 3/21 (lane t -0.73 m), coverage 1.8 %
+[322 s] segment 4/21 (lane t -0.73 m), coverage 5.6 %
+[344 s] segment 4/21 (lane t -0.73 m), coverage 5.6 %
+[364 s] segment 4/21 (lane t -0.73 m), coverage 5.6 %
+[387 s] segment 4/21 (lane t -0.73 m), coverage 5.6 %
+[407 s] segment 4/21 (lane t -0.73 m), coverage 5.6 %
+[429 s] segment 5/21 (lane t -0.60 m), coverage 11.7 %
+[452 s] segment 5/21 (lane t -0.60 m), coverage 11.7 %
+[472 s] segment 5/21 (lane t -0.60 m), coverage 11.7 %
+[495 s] segment 6/21 (lane t -0.60 m), coverage 11.7 %
+[515 s] segment 6/21 (lane t -0.60 m), coverage 11.7 %
+[538 s] segment 6/21 (lane t -0.60 m), coverage 11.7 %
+[561 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[581 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[603 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[626 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[646 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[669 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+wsl : /mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/tools/wsl_mission_test.sh: line 17:   510 Killed                  
+ros2 launch wcr_webots webots.launch.py world:=$WORLD rviz:=false mission:=true fast:=true area:=$AREA 
+verbose:=$VERBOSE > $LOG 2>&1
+At line:1 char:554
++ ... ess -Force; wsl -d Ubuntu-22.04 -- bash "/mnt/c/Users/DEEPAK E L/Down ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (/mnt/c/Users/DE...OSE > $LOG 2>&1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[689 s] obstacle ahead at s 3.04 t -0.57 (not on the map): detour to s 3.84
+[712 s] process started with pid [1578]
+[735 s] segment 8/22 (lane t -0.47 m), coverage 0.0 %
+[755 s] segment 13/22 (lane t -0.09 m), coverage 1.8 %
+[778 s] segment 13/22 (lane t -0.09 m), coverage 1.8 %
+[801 s] segment 14/22 (lane t +0.04 m), coverage 10.4 %
+[821 s] segment 15/22 (lane t +0.17 m), coverage 17.4 %
+[844 s] segment 15/22 (lane t +0.17 m), coverage 17.4 %
+[864 s] segment 16/22 (lane t +0.30 m), coverage 24.7 %
+[887 s] segment 17/22 (lane t +0.43 m), coverage 31.9 %
+[910 s] segment 17/22 (lane t +0.43 m), coverage 31.9 %
+[930 s] segment 18/22 (lane t +0.56 m), coverage 38.8 %
+[953 s] segment 19/22 (lane t +0.68 m), coverage 45.9 %
+[976 s] segment 20/22 (lane t +0.81 m), coverage 50.2 %
+[996 s] segment 21/22 (lane t +0.94 m), coverage 56.5 %
+[1019 s] segment 22/22 (lane t +0.99 m), coverage 60.9 %
+[1039 s] segment 22/22 (lane t +0.99 m), coverage 60.9 %
+[1062 s] [coverage_mission-17]   event           obstacle ahead at s 3.46 t 0.94 (not on the map): rest of the segment skipped
+== launch log (errors / Nav2 / mission)
+[INFO] [coverage_mission-17]: process started with pid [1578]
+[controller_server-9] [INFO] [1792411800.337007772] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[coverage_mission-17] [INFO] [1792411800.510245566] [coverage_mission]: winter_dam: area s 1.90..4.10 m, t -1.00..1.00 m
+[controller_server-9] [INFO] [1792411800.850062647] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411801.337088402] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411801.837105745] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411802.337131217] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411802.837071845] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411803.337008623] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411803.837156898] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411804.337140479] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411804.837038273] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411805.337133723] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411805.837067714] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411806.337171031] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411806.837178179] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411807.337116916] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411807.837167657] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411808.337063181] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411808.837037582] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-9] [INFO] [1792411809.337125016] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[wall_frames-5] [INFO] [1792411812.108202849] [wall_frames]: map -> odom: start at x 1.496 m (up the face), y 0.000 m, yaw 0.0 deg (-0.0 mm off the face plane)
+[bt_navigator-13] [ERROR] [1792411812.156189912] [bt_navigator_navigate_through_poses_rclcpp_node]: "follow_path" action server not available after waiting for 1.00s
+[bt_navigator-13] [ERROR] [1792411812.331681885] [bt_navigator]: Exception when loading BT: Action server follow_path not available
+[bt_navigator-13] [ERROR] [1792411812.331788826] [bt_navigator]: Error loading XML file: /opt/ros/humble/share/nav2_bt_navigator/behavior_trees/navigate_through_poses_w_replanning_and_recovery.xml
+[lifecycle_manager-16] [ERROR] [1792411812.335146587] [lifecycle_manager_navigation]: Failed to change state for node: bt_navigator
+[lifecycle_manager-16] [ERROR] [1792411812.335262966] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[coverage_mission-17] [INFO] [1792411814.529872013] [coverage_mission]: wall camera footprint 10 x 15 cm, centre 0.22 m ahead / -0.07 m across of the base -> 16 lanes 13 cm apart, 22 segments (7.4 m of lanes skipped next to mapped obstacles)
+[coverage_mission-17] [INFO] [1792411814.581569633] [coverage_mission]: mission started
+[coverage_mission-17] [INFO] [1792411814.629826391] [coverage_mission]: segment 1/22 (lane t -0.85 m), coverage 0.0 %
+[coverage_mission-17] [INFO] [1792411814.706783828] [coverage_mission]: Nav2 could not reach s 1.73 t -0.85: segment skipped
+[coverage_mission-17] [INFO] [1792411814.751099703] [coverage_mission]: segment 2/22 (lane t -0.85 m), coverage 0.0 %
+[coverage_mission-17] [INFO] [1792411814.813726063] [coverage_mission]: Nav2 could not reach s 3.23 t -0.85: segment skipped
+[coverage_mission-17] [INFO] [1792411814.866189813] [coverage_mission]: segment 3/22 (lane t -0.73 m), coverage 0.0 %
+[coverage_mission-17] [INFO] [1792411814.913613958] [coverage_mission]: Nav2 could not reach s 3.78 t -0.73: segment skipped
+[coverage_mission-17] [INFO] [1792411814.962109075] [coverage_mission]: segment 4/22 (lane t -0.73 m), coverage 0.0 %
+[coverage_mission-17] [INFO] [1792411815.014529461] [coverage_mission]: Nav2 could not reach s 1.83 t -0.73: segment skipped
+[coverage_mission-17] [INFO] [1792411815.070992869] [coverage_mission]: segment 5/22 (lane t -0.60 m), coverage 0.0 %
+[coverage_mission-17] [INFO] [1792411815.119258760] [coverage_mission]: Nav2 could not reach s 1.73 t -0.60: segment skipped
+[coverage_mission-17] [INFO] [1792411815.171760171] [coverage_mission]: segment 6/22 (lane t -0.60 m), coverage 0.0 %
+== report
+WCR coverage mission: winter_dam
+  area            s 1.90..4.10 m, t -1.00..1.00 m (4.4 m2)
+  coverage        64.1 % of the inspectable area (61.9 % incl. obstacle footprints)
+  segments        22 (10 skipped), 10 Nav2 detours, back at the start: no
+  path length     22.8 m in 212 s sim time
+  defects found   2: crack_0, crack_0
+  obstacle        bush_0     on the map, never in the costmap
+  obstacle        debris_0   NOT on the map, in the costmap
+  event           Nav2 could not reach s 1.73 t -0.85: segment skipped
+  event           Nav2 could not reach s 3.23 t -0.85: segment skipped
+  event           Nav2 could not reach s 3.78 t -0.73: segment skipped
+  event           Nav2 could not reach s 1.83 t -0.73: segment skipped
+  event           Nav2 could not reach s 1.73 t -0.60: segment skipped
+  event           Nav2 could not reach s 3.23 t -0.60: segment skipped
+  event           Nav2 could not reach s 3.78 t -0.47: segment skipped
+  event           Nav2 could not reach s 3.13 t -0.34: segment skipped
+  event           Nav2 could not reach s 3.78 t -0.21: segment skipped
+  event           Nav2 could not reach s 2.08 t -0.21: segment skipped
+  event           obstacle ahead at s 3.37 t 0.68 (not on the map): rest of the segment skipped
+  event           obstacle ahead at s 3.46 t 0.94 (not on the map): rest of the segment skipped
+/mnt/c/Users/DEEPAK E L/Downloads/wcr_dam_sim/tools/wsl_mission_test.sh: line 22: kill: (510) - No such process

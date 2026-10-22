@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion",
+	"type": "script",
+	"author": "",
+	"description": {
+		"": "Builds the WCR wall-climbing robot from wcr_robot.step + parts.json (converted parts, joints)"
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}
